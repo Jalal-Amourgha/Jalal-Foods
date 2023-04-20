@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+  }
+
+:root {
+    --text-color:#ff702a;
+    --bg-color:#1e1c2a;
+    --padding: 0px 150px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* H E A D E R*/
+
+nav {
+    padding: 15px 150px;
+}
+
+nav h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover , .hovered{
+    color: var(--text-color);
+}
+
+nav .fa-solid {
+    color: #ff702a;
+    font-size: 2rem;
+    position: absolute;
+    display: none;
+}
+
+/* H E A D E R*/
+
+/* H O M E*/
+
+.home {
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+}
+
+.home h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+
+.home h3 {
+    color: white;
+    padding: 30px 0px;
+}
+
+.home button {
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 3%;
+    padding: 20px 30px;
+}
+
+.home a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.home a:hover {
+    color: black;
+}
+
+.home img {
+    height: 400px;
+    margin: 60px 0px 0px 60px;
+}
+
+
+/* H O M E */
+
+/* A B O U T */
+
+.about {
+    padding: var(--padding);
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+}
+
+.about img {
+    height: 300px;
+    margin-right: 250px;
+
+}
+
+.about h3 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.about h2 , .about p {
+    color: white;
+    margin: 30px 0px;
+}
+
+.about button {
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 3%;
+    padding: 10px 20px;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.about a:hover {
+    color: black;
+}
+
+/* A B O U T */
+
+/* M E N U */
+
+.menu {
+    padding: var(--padding);
+}
+
+.menu h3 {
+    color: var(--text-color);
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+.menu h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu .row {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 60px;
+}
+
+.menu img {
+    height: 200px;
+    margin:15px 0px 0px 50px;
+}
+
+
+.menu .background {
+    background-color: white;
+    border-radius: 5%;
+}
+
+.menu .background h3 {
+    color: black;
+    text-align: center;
+}
+
+.menu .background h5 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+/* M E N U */
+
+/* S E R V I C E S */
+
+.services {
+    padding: var(--padding);
+}
+
+.services h3 , .services h1 {
+    text-align: center;;
+}
+
+.services h3 {
+    color: var(--text-color);
+    margin: 70px 0px 50px 0px;
+}
+
+.services h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.services .services-boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 55px;
+}
+
+.services img {
+    height: 150px;
+    margin:15px 0px 0px 80px;
+}
+
+.services .services-boxs h3 {
+    margin: 20px 0px 30px 0px;
+}
+
+.services .services-boxs p {
+    color: white;
+    text-align: center;
+}
+
+
+/* S E R V I C E S */
+
+/* C O N T A C T */
+
+.contact {
+    padding: var(--padding);
+    margin-top: 100px;
+}
+
+.contact  {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+}
+
+.contact h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+
+.contact li {
+    color: white;
+    margin-top: 20px;
+}
+
+
+.contact  a  {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact .socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .socials a{
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+
+.contact a:hover {
+    color: var(--text-color);
+}
+
+
+/* C O N T A C T */
+
+/* M E D I A */
+
+@media  (max-width: 768px) {
+    nav, .home, .about, .menu ,.services, .contact {
+        padding-left: 0px ;
+        padding-right: 0px;
+        width: 350px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-solid {
+        display: block;
+        margin-left: 300px;
+        margin-top: -78px;
+    }
+
+    nav .fa-solid:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, #ff702a);
+    }
+
+    .home {
+        grid-template-columns: repeat(1, 350px);
+    }
+    
+    .home img {
+        margin-left: 15px;
+        height: 250px;
+        width: 250px;
+    }
+  
+    .about {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .about img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .menu .row {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .menu .background {
+        margin-bottom: 25px;
+    }
+
+    .services .services-boxs {
+        grid-template-columns: repeat(1, 350px);
+    }
+    
+
+    .contact  {
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .contact .contact-box {
+        margin-bottom: 35px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* M E D I A */

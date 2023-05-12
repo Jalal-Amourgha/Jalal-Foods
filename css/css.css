@@ -75,8 +75,9 @@ nav .fa-solid {
 
 .home {
     padding: var(--padding);
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(2,500px);
+    grid-template-columns: repeat(2,calc(100% / 2));
 }
 
 .home h1 {
@@ -122,9 +123,10 @@ nav .fa-solid {
 
 .about {
     padding: var(--padding);
+    margin-bottom: 200px;
     padding-top: 150px;
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, calc(100% /2));
 }
 
 .about img {
@@ -167,6 +169,7 @@ nav .fa-solid {
 
 .menu {
     padding: var(--padding);
+    margin-bottom: 150px;
 }
 
 .menu h3 {
@@ -183,12 +186,12 @@ nav .fa-solid {
 
 .menu .row {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-column-gap: 60px;
+    grid-template-columns: repeat(3, calc(100% / 4));
+    grid-column-gap: 130px;
 }
 
 .menu img {
-    height: 200px;
+    height: 150px;
     margin:15px 0px 0px 50px;
 }
 
@@ -220,7 +223,7 @@ nav .fa-solid {
 }
 
 .services h3 , .services h1 {
-    text-align: center;;
+    text-align: center;
 }
 
 .services h3 {
@@ -235,7 +238,7 @@ nav .fa-solid {
 
 .services .services-boxs {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, calc(90% / 3));
     grid-column-gap: 55px;
 }
 
@@ -265,7 +268,7 @@ nav .fa-solid {
 
 .contact  {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4, calc(100% / 4));
 }
 
 .contact h3 {
@@ -313,8 +316,8 @@ nav .fa-solid {
 
 @media  (max-width: 768px) {
     nav, .home, .about, .menu ,.services, .contact {
-        padding-left: 0px ;
-        padding-right: 0px;
+        padding: 0px;
+        margin: 15px;
         width: 350px;
     }
 
@@ -346,6 +349,7 @@ nav .fa-solid {
         margin-left: 15px;
         height: 250px;
         width: 250px;
+        margin-bottom: 80px;
     }
   
     .about {
@@ -353,8 +357,7 @@ nav .fa-solid {
     }
 
     .about img {
-        height: 250px;
-        width: 250px;
+        display: none;
     }
 
     .menu .row {
@@ -365,10 +368,17 @@ nav .fa-solid {
         margin-bottom: 25px;
     }
 
+    .menu img {
+        margin: 15px 0px 0px 100px;
+    }
+
     .services .services-boxs {
         grid-template-columns: repeat(1, 350px);
     }
     
+    .services img {
+        margin: 15px 0px 0px 110px;
+    }
 
     .contact  {
         grid-template-columns: repeat(1, 350px);
